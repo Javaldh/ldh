@@ -12,7 +12,6 @@ public class FileUtil {
 	 * @param beginIndex  开始字符位置
 	 * @param ByteLength  读取字符长度
 	 * @return  读取的字符串
-	 * @throws IOException
 	 */
 	public static String getStringFromFile(String filePath , int beginIndex , int ByteLength) throws IOException{
 		String returnStr = null;

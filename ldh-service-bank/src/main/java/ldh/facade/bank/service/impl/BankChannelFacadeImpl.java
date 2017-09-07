@@ -50,7 +50,6 @@ public class BankChannelFacadeImpl implements BankChannelFacade {
 	}
 	/**
 	 * 缓存银行渠道
-	 * @param entity
 	 */
 	private void saveCacheBankChannel(BankChannel entity){
 		StringBuffer buffer = new StringBuffer(CacheConstant.BANK_CHANNEL).append(entity.getBankChannelCode());
@@ -78,7 +77,6 @@ public class BankChannelFacadeImpl implements BankChannelFacade {
 	
 	/**
 	 * 根据协议表中的业务类型和账户表中的账户性质查询出对应的渠道
-	 * @param linkType
 	 */
 	public List<BankChannel> listChannalByAgreementBusTypeAndAccountType(int linkType ,int accountType){
 		return bankChannelBiz.listChannalByAgreementBusTypeAndAccountType(linkType ,accountType);
@@ -91,9 +89,6 @@ public class BankChannelFacadeImpl implements BankChannelFacade {
 	
 	/**
 	 * 根据银行渠道编号模糊查找 
-	 * @param bankChannelCode .
-	 * @param status .
-	 * @return List .
 	 */
 	public List likeBy(String bankChannelCode, Integer status){
 		return bankChannelBiz.likeBy(bankChannelCode, status);

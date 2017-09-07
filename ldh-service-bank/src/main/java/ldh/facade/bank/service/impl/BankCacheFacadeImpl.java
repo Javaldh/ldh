@@ -20,9 +20,6 @@ public class BankCacheFacadeImpl implements BankCacheFacade{
 	
 	/**
 	 * 根据银行渠道编号从缓存中查找银行渠道信息.
-	 * 
-	 * @param bankChannelCode
-	 * @return BankChannel .
 	 */
 	@Override
 	public BankChannel getBankChannelByChannelCodeInCache(String bankChannelCode)

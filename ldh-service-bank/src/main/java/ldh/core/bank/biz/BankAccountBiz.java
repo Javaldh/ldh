@@ -16,10 +16,7 @@ import ldh.facade.bank.exceptions.BankBizException;
 
 
 /**
- * 
  * @描述: 银行账户信息表业务实现类 .
- * @作者: WuShuicheng .
- * @创建时间: 2014-4-15, 下午2:28:52
  */
 @Component("bankAccountBiz")
 public class BankAccountBiz extends BaseBizImpl<BankAccount> {
@@ -37,8 +34,6 @@ public class BankAccountBiz extends BaseBizImpl<BankAccount> {
 	
 	/**
 	 * 根据银行账号查询银行账户信息
-	 * @param bankAccount
-	 * @return
 	 */
 	public BankAccount getByBankAccount(String bankAccount){
 		if (StringUtils.isBlank(bankAccount)) {
@@ -51,8 +46,6 @@ public class BankAccountBiz extends BaseBizImpl<BankAccount> {
 	
 	/**
 	 * 根据开户银行查询银行账户信息
-	 * @param openBank
-	 * @return
 	 */
 	public List<BankAccount> getByOpenBank(String openBank){
 		if (StringUtils.isBlank(openBank)) {
@@ -65,9 +58,6 @@ public class BankAccountBiz extends BaseBizImpl<BankAccount> {
 	
 	/**
 	 * 根据银行账号模糊查找 
-	 * @param bankAccountKey .
-	 * @param status .
-	 * @return List .
 	 */
 	public List<BankAccount> likeBy(String bankAccountKey, Integer status){
 		return bankAccountDao.likeBy(bankAccountKey, status);

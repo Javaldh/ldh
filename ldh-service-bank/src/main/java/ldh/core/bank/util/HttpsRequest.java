@@ -18,16 +18,10 @@ import javax.net.ssl.X509TrustManager;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-/**
- * 
- * @时间 2013-11-14
- * @author Peter
- */
+
 public class HttpsRequest {
 	/**
 	 * 该方法用来发送https请求
-	 * @param URL  请求URL
-	 * @return  请求返回的数据
 	 */
 	 private static final Log log = LogFactory.getLog(HttpsRequest.class);
     public static String sendHttpsRequest(String Url) throws IOException {
@@ -48,8 +42,6 @@ public class HttpsRequest {
      * 通过HTTPS方式下载对账文件
      * @param filePath 下载文件存放路径
      * @param Url  请求的Url
-     * @return
-     * @throws IOException
      */
     public static boolean sendHttprequestForFileDownd(String filePath , String Url) throws IOException{
     	boolean flag = false;

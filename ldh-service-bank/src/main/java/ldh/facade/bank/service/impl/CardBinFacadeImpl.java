@@ -13,10 +13,7 @@ import ldh.facade.bank.service.CardBinFacade;
 
 
 /**
- * 
  * @描述: 银行卡卡Bin信息Dubbo服务接口实现类.
- * @作者: HuPitao,WuShuicheng .
- * @创建时间: 2014-4-16, 下午1:46:44
  */
 @Component("cardBinFacade")
 public class CardBinFacadeImpl implements CardBinFacade {
@@ -46,10 +43,6 @@ public class CardBinFacadeImpl implements CardBinFacade {
 
 	/**
 	 * 根据卡BIN查找
-	 * 
-	 * @param id
-	 *            主键
-	 * @return
 	 */
 	public CardBin getByCardBin(String cardBin, Integer status) {
 		return cardBinBiz.getByCardBin(cardBin, status);

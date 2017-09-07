@@ -1,6 +1,3 @@
-/**
- * wusc.edu.pay.bank.dao.impl.BankChannelDaoImpl.java
- */
 package ldh.core.bank.dao.impl;
 
 import java.util.HashMap;
@@ -13,18 +10,10 @@ import ldh.common.core.dao.BaseDaoImpl;
 import ldh.core.bank.dao.BankChannelDao;
 import ldh.facade.bank.entity.BankChannel;
 
-
-/**
- * @author System
- * 
- * @since 2013-11-07
- */
 @Repository(value="bankChannelDao")
 public class BankChannelDaoImpl extends BaseDaoImpl<BankChannel> implements BankChannelDao {
 	/**
 	 * 根据银行渠道编号查找 
-	 * @param bankChannelCode .
-	 * @return BankChannel .
 	 */
 	public BankChannel getByBankChannelCode(String bankChannelCode){
 		Map<String, Object> params = new HashMap<String, Object>();
@@ -34,9 +23,6 @@ public class BankChannelDaoImpl extends BaseDaoImpl<BankChannel> implements Bank
 	
 	/**
 	 * 根据银行渠道编号模糊查找 
-	 * @param bankChannelCode .
-	 * @param status .
-	 * @return List .
 	 */
 	public List likeBy(String bankChannelCode, Integer status) {
 		Map<String, Object> params = new HashMap<String, Object>();
@@ -47,8 +33,6 @@ public class BankChannelDaoImpl extends BaseDaoImpl<BankChannel> implements Bank
 	
 	/**
 	 * 删除银行渠道 .
-	 * 
-	 * @param bankChannelCode .
 	 */
     public void deleteChannelByCode(String bankChannelCode){
     	super.getSessionTemplate().delete(getStatement("deleteChannelByCode"), bankChannelCode);
@@ -56,8 +40,6 @@ public class BankChannelDaoImpl extends BaseDaoImpl<BankChannel> implements Bank
 
     /***
 	 * 根据银行渠道名称查询银行渠道信息
-	 * @param channelName
-	 * @return
 	 */
 	public BankChannel getByBankChannelName(String channelName) {
 		
@@ -80,7 +62,6 @@ public class BankChannelDaoImpl extends BaseDaoImpl<BankChannel> implements Bank
 	
 	/**
 	 * 根据协议表中的业务类型和账户表中的账户性质查询出对应的渠道
-	 * @param linkType
 	 */
 	public List<BankChannel> listChannalByAgreementBusTypeAndAccountType(int linkType , int accountType){
 		Map<String, Object> params = new HashMap<String, Object>();

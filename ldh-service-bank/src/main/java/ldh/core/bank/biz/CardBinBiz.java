@@ -12,10 +12,7 @@ import ldh.facade.bank.exceptions.BankBizException;
 
 
 /**
- * 
  * @描述: 银行卡卡Bin信息管理业务逻辑层 .
- * @作者: HuPitao, WuShuicheng .
- * @创建时间: 2014-4-16, 下午1:49:03
  */
 @Component("cardBinBiz")
 public class CardBinBiz extends BaseBizImpl<CardBin> {
@@ -30,8 +27,6 @@ public class CardBinBiz extends BaseBizImpl<CardBin> {
 
 	/**
 	 * 根据卡Bin值查找卡Bin信息.
-	 * @param cardBin
-	 * @return
 	 */
 	public CardBin getByCardBin(String cardBin, Integer status) {
 		if(StringUtils.isBlank(cardBin)){

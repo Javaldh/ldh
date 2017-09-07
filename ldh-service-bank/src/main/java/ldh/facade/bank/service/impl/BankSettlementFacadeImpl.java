@@ -46,7 +46,6 @@ public class BankSettlementFacadeImpl implements BankSettlementFacade {
 	 * "tradeGainCheckFileTime:业务对账文件获取时间，如：1.15代表每天凌晨1点15分后获取对账文件"、<br/>
 	 * "fundGainCheckFileTime:清算对账文件获取时间，如：1.15代表每天凌晨1点15分后获取对账文件"、<br/>
 	 * "settleCycle:结算周期：T+X"
-	 * @return list.
 	 */
 	@Override
 	public List listAvailableBankSettlementInfo() {
@@ -55,8 +54,6 @@ public class BankSettlementFacadeImpl implements BankSettlementFacade {
 
 	/**
 	 * 根据银行渠道编号获取银行结算信息.
-	 * @param bankChannelCode 银行渠道编号.
-	 * @return BankSettlement.
 	 */
 	@Override
 	public BankSettlement getByBankBankChannelCode(String bankChannelCode) {
@@ -65,8 +62,6 @@ public class BankSettlementFacadeImpl implements BankSettlementFacade {
 
 	/**
 	 * 获取银行渠道可用状态下的银行账号
-	 * @return
-	 * @throws BizException
 	 */
 	@Override
 	public List listAvailableBankAccount() throws BizException {

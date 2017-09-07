@@ -14,10 +14,7 @@ import ldh.facade.bank.service.BankAccountFacade;
 
 
 /**
- * 
  * @描述: 银行账户信息，Dubbo服务接口实现类.
- * @作者: WuShuicheng .
- * @创建时间: 2014-4-15, 下午2:33:37
  */
 @Component("bankAccountFacade")
 public class BankAccountFacadeImpl implements BankAccountFacade {
@@ -64,15 +61,11 @@ public class BankAccountFacadeImpl implements BankAccountFacade {
 	 */
 	@Override
 	public List<BankAccount> getByOpenBank(String openBank) {
-		// TODO Auto-generated method stub
 		return bankAccountBiz.getByOpenBank(openBank);
 	}
 	
 	/**
 	 * 根据银行账号模糊查找 
-	 * @param bankAccountKey .
-	 * @param status .
-	 * @return List .
 	 */
 	public List<BankAccount> likeBy(String bankAccountKey, Integer status) {
 		return bankAccountBiz.likeBy(bankAccountKey, status);

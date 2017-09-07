@@ -1,6 +1,5 @@
 package ldh.test.biz;
 
-import java.util.Date;
 import java.util.List;
 
 import org.junit.Test;
@@ -14,10 +13,6 @@ import ldh.facade.bank.service.BankChannelFacade;
 
 /**
  * ClassName: AccountHistoryFaceTest <br/>
- * Function: <br/>
- * date: 2013-11-7 下午8:02:34 <br/>
- * 
- * @author laich
  */
 
 @RunWith(SpringJUnit4ClassRunner.class)

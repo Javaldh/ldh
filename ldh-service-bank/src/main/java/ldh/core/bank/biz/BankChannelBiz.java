@@ -52,7 +52,6 @@ public class BankChannelBiz extends BaseBizImpl<BankChannel> {
 	
 	/**
 	 * 根据协议表中的业务类型和账户表中的账户性质查询出对应的渠道
-	 * @param linkType
 	 */
 	public List<BankChannel> listChannalByAgreementBusTypeAndAccountType(int linkType , int accountType){
 		return bankChannelDao.listChannalByAgreementBusTypeAndAccountType(linkType , accountType);
@@ -67,9 +66,6 @@ public class BankChannelBiz extends BaseBizImpl<BankChannel> {
 	
 	/**
 	 * 根据银行渠道编号模糊查找 
-	 * @param bankChannelCode .
-	 * @param status .
-	 * @return List .
 	 */
 	public List likeBy(String bankChannelCode, Integer status){
 		return bankChannelDao.likeBy(bankChannelCode, status);
