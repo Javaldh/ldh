@@ -19,8 +19,6 @@ import jxl.DateCell;
 import jxl.NumberCell;
 import jxl.Workbook;
 import jxl.read.biff.BiffException;
-import jxl.write.WriteException;
-import jxl.write.biff.RowsExceededException;
 
 /**
  * 

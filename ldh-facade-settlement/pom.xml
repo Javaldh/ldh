@@ -1,0 +1,51 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+ <parent>
+		<groupId>ldh.common</groupId>
+		<artifactId>ldh-common-parent</artifactId>
+		<version>1.0-SNAPSHOT</version>
+		<relativePath>../ldh-common-parent</relativePath>
+	</parent>
+
+		<groupId>ldh.facade</groupId>
+	  <artifactId>ldh-facade-settlement</artifactId>
+	  <version>${ldh-facade-settlement.version}</version>
+	  <packaging>jar</packaging>
+
+  <name>ldh-facade-settlement</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+
+		<dependency>
+			<groupId>ldh.common</groupId>
+			<artifactId>ldh-common</artifactId>
+			<version>${ldh-common.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>ldh.facade</groupId>
+			<artifactId>ldh-facade-fee</artifactId>
+			<version>${ldh-facade-fee.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>ldh.facade</groupId>
+			<artifactId>ldh-facade-remit</artifactId>
+			<version>${ldh-facade-remit.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>ldh.facade</groupId>
+			<artifactId>ldh-facade-account</artifactId>
+			<version>${ldh-facade-account.version}</version>
+		</dependency>
+
+	</dependencies>
+</project>

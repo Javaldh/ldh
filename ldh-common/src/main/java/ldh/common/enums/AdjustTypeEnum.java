@@ -8,7 +8,6 @@ import java.util.Map;
 /**
  * 核算类型枚举.
  * 适用于TBL_ACCOUNTING_TEMPLATE_TITLE表.
- * @author Hill
  */
 public enum AdjustTypeEnum {
 	 SOURCETITLENO("收款方",1),

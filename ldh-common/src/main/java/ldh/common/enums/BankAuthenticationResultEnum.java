@@ -2,10 +2,6 @@ package ldh.common.enums;
 
 /**
  * 银行个人信息鉴权、签约结果枚举类
- * @author： Peter
- * @ClassName: AuthenticationResultEnum.java
- * @Date： 2014-11-6 上午11:00:55 
- * @version：  V1.0
  */
 public enum BankAuthenticationResultEnum {
 	

@@ -59,4 +59,8 @@ public class DataField {
 	public void setColumnWidth(int columnWidth) {
 		this.columnWidth = columnWidth;
 	}
+
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
 }

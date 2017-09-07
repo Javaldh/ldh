@@ -7,8 +7,6 @@ import java.util.Map;
 
 /**
  * 交易类型枚举. 适用于所有表.
- * 
- * @author Hill
  */
 public enum PublicStatusEnum {
 	

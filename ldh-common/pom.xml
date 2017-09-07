@@ -10,9 +10,10 @@
 	</parent>
   
   <artifactId>ldh-common</artifactId>
+  <version>${ldh-common.version}</version>
   <packaging>jar</packaging>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>ldh-common Maven Webapp</name>
+  
+  <name>ldh-common</name>
   <url>http://maven.apache.org</url>
   
   <properties>

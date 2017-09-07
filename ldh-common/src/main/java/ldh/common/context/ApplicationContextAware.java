@@ -7,8 +7,6 @@ import org.springframework.stereotype.Component;
 
 /**
  * 描述:获取spring上下文
- * @author Hill
- * 
  */
 @Lazy(value=false)
 @Component

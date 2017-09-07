@@ -14,9 +14,6 @@ import ldh.common.utils.ResourceUtils;
 /**
  * className：PublicConifg <br>
  * Function： 环境配置基础类 <br>
- * date: 2014-11-5-上午10:15:20<br>
- * 
- * @author laich
  */
 public class PublicConfig {
 

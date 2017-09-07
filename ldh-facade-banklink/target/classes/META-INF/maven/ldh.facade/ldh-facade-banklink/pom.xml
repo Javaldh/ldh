@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+ <parent>
+		<groupId>ldh.common</groupId>
+		<artifactId>ldh-common-parent</artifactId>
+		<version>1.0-SNAPSHOT</version>
+		<relativePath>../ldh-common-parent</relativePath>
+	</parent>
+
+		<groupId>ldh.facade</groupId>
+	  <artifactId>ldh-facade-banklink</artifactId>
+	  <version>${ldh-facade-banklink.version}</version>
+	  <packaging>jar</packaging>
+
+  <name>ldh-facade-banklink</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+		<dependency>
+			<groupId>ldh.common</groupId>
+			<artifactId>ldh-common</artifactId>
+  			<version>${ldh-common.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>dubbo</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework</groupId>
+					<artifactId>spring</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+	</dependencies>
+	<build>
+    <finalName>ldh.facade.banklink</finalName>
+  </build>
+</project>

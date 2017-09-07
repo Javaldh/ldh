@@ -10,5 +10,6 @@ import java.util.List;
  *
  */
 public interface ExportDataSource<T>{
+	@SuppressWarnings("hiding")
 	<T> List<T> getData();
 }

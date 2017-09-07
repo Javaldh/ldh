@@ -8,7 +8,6 @@ import java.util.Map;
 /**
  * 核算账户枚举.
  * 适用于TBL_ACCOUNTING_TEMPLATE_TITLE表.
- * @author Hill
  */
 public enum AdjustAccountEnum {
 	 BANK("银行",1002),

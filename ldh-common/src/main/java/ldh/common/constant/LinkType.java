@@ -3,9 +3,6 @@ package ldh.common.constant;
 
 /**
  * 接入类型
- * 
- * @author huqian
- * 
  */
 public class LinkType {
 

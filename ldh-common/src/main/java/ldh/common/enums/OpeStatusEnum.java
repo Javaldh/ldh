@@ -9,13 +9,6 @@ import java.util.Map;
 /**
  * <ul>
  * <li>Title: 日志操作枚举</li>
- * <li>Description:</li>
- * <li>Copyright: www.gzzyzz.com</li>
- * <li>Company:</li>
- * </ul>
- * 
- * @author Hill
- * @version 2014-6-5
  */
 public enum OpeStatusEnum {
 

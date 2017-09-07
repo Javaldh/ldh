@@ -10,8 +10,9 @@
 	</parent>
 	
 	<artifactId>ldh-common-core</artifactId>
+  <version>${ldh-common-core.version}</version>
   <packaging>jar</packaging>
-  <version>0.0.1-SNAPSHOT</version>
+  
   <name>ldh-common-core</name>
   <url>http://maven.apache.org</url>
   
@@ -24,7 +25,7 @@
 		<dependency>
 			<groupId>ldh.common</groupId>
 			<artifactId>ldh-common</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<version>${ldh-common.version}</version>
 		</dependency>
 		
 		<dependency>

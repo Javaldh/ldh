@@ -5,9 +5,6 @@ import java.util.Map;
 
 /**
  * 接口类型
- * 
- * @author huqian
- * 
  */
 public enum CmdType {
 

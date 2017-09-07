@@ -13,10 +13,6 @@ import java.util.Map;
 
 /**
  * ClassName: CAEnum <br/>
- * Function: <br/>
- * date: 2014-1-8 下午6:38:02 <br/>
- * 
- * @author laich
  */
 public enum CAAddrEnum {
 

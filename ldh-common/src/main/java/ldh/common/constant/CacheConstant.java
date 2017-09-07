@@ -7,12 +7,7 @@ package ldh.common.constant;
  * <ul>
  * <li>Title:缓存常量类</li>
  * <li>Description: 定义缓存KEY值</li>
- * <li>Copyright: www.gzzyzz.com</li>
- * <li>Company:</li>
  * </ul>
- * 
- * @author Hill
- * @version 2014-4-22
  */
 public class CacheConstant {
 	/**

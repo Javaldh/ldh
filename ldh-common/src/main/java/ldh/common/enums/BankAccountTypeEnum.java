@@ -7,10 +7,6 @@ import java.util.Map;
 
 /**
  * 银行账户类型
- * 
- * @desc
- * @author shenjialong
- * @date 2014-1-13,下午2:19:59
  */
 @SuppressWarnings({ "rawtypes", "unchecked" })
 public enum BankAccountTypeEnum {

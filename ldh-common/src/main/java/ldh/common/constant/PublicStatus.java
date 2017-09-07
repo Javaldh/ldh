@@ -3,9 +3,6 @@ package ldh.common.constant;
 
 /**
  * 公用状态
- * 
- * @author huqian
- * 
  */
 public class PublicStatus {
 
