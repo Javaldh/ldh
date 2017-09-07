@@ -1,20 +1,7 @@
-/**
- * wusc.edu.pay.common.core.mybatis.dialect.MySqlDialect.java
- */
 package ldh.common.core.mybatis.dialect;
 
 /**
- * 
- * 
- * <ul>
  * <li>Title: MySQL数据库分页适配器</li>
- * <li>Description:</li>
- * <li>Copyright: www.gzzyzz.com</li>
- * <li>Company:</li>
- * </ul>
- * 
- * @author Hill
- * @version 2014-10-13
  */
 public class MySqlDialect extends Dialect {
 	public boolean supportsLimitOffset() {

@@ -14,9 +14,6 @@ import ldh.common.page.PageParam;
 
 /**
  * 基类Biz接口实现类
- * 
- * @author Hill
- * 
  */
 public abstract class BaseBizImpl<T extends BaseEntity> implements BaseBiz<T> {
 
@@ -44,10 +41,6 @@ public abstract class BaseBizImpl<T extends BaseEntity> implements BaseBiz<T> {
 
 	/**
 	 * 根据ID删除记录.
-	 * 
-	 * @param id
-	 *            .
-	 * @return
 	 */
 	public long deleteById(long id) {
 		return this.getDao().deleteById(id);
@@ -55,12 +48,10 @@ public abstract class BaseBizImpl<T extends BaseEntity> implements BaseBiz<T> {
 
 	/**
 	 * 分页查询 .
-	 * 
 	 * @param pageParam
 	 *            分页参数.
 	 * @param paramMap
 	 *            业务条件查询参数.
-	 * @return
 	 */
 	public PageBean listPage(PageParam pageParam, Map<String, Object> paramMap) {
 		return this.getDao().listPage(pageParam, paramMap);
@@ -72,9 +63,6 @@ public abstract class BaseBizImpl<T extends BaseEntity> implements BaseBiz<T> {
 
 	/**
 	 * 根据条件查询 listBy: <br/>
-	 * 
-	 * @param paramMap
-	 * @return 返回集合
 	 */
 	public List<T> listBy(Map<String, Object> paramMap) {
 		return this.getDao().listBy(paramMap);
@@ -86,9 +74,6 @@ public abstract class BaseBizImpl<T extends BaseEntity> implements BaseBiz<T> {
 
 	/**
 	 * 根据条件查询 listBy: <br/>
-	 * 
-	 * @param paramMap
-	 * @return 返回实体
 	 */
 	public T getBy(Map<String, Object> paramMap) {
 		return this.getDao().getBy(paramMap);
@@ -100,8 +85,6 @@ public abstract class BaseBizImpl<T extends BaseEntity> implements BaseBiz<T> {
 
 	/**
 	 * 根据序列名称获取下一个值
-	 * 
-	 * @return
 	 */
 	public String getSeqNextValue(String seqName) {
 		return this.getDao().getSeqNextValue(seqName);

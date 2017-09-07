@@ -16,11 +16,7 @@ import ldh.common.exceptions.BizException;
 
 
 /**
- * className：ExceptionInterceptorLog <br>
  * Function：异常的处理 拦截 <br>
- * date: 2014-12-16-上午10:12:37 <br>
- * 
- * @author laich
  */
 public class ExceptionInterceptorLog implements ThrowsAdvice {
 

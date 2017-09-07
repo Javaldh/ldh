@@ -9,9 +9,6 @@ import ldh.facade.settlement.enums.RemitFeeTypeEnum;
 
  /**
   * @title  临时结算规则参数
-  * @company 中益智正(gzzyzz)
-  * @author jialong.shen
-  * @since 2014-8-15
   */
 public class TempSettleRuleParamsDTO implements Serializable {
 

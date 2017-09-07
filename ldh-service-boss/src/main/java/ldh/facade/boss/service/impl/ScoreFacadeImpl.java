@@ -14,13 +14,6 @@ import ldh.facade.boss.exceptions.BossBizException;
 import ldh.facade.boss.service.ScoreFacade;
 
 
-/**
- * 类描述：
- * 
- * @author: huangbin
- * @date： 日期：2013-12-3 时间：上午11:58:09
- * @version 1.0
- */
 @Component("scoreFacade")
 public class ScoreFacadeImpl implements ScoreFacade {
 	@Autowired
@@ -28,9 +21,6 @@ public class ScoreFacadeImpl implements ScoreFacade {
 
 	/***
 	 * 创建积分信息
-	 * 
-	 * @param score
-	 * @return
 	 */
 	public long createScore(Score score) {
 		return scoreBiz.createScore(score);
@@ -38,9 +28,6 @@ public class ScoreFacadeImpl implements ScoreFacade {
 
 	/***
 	 * 修改积分信息
-	 * 
-	 * @param score
-	 * @return
 	 */
 	public long updScore(Score score) {
 		return scoreBiz.updScore(score);
@@ -48,9 +35,6 @@ public class ScoreFacadeImpl implements ScoreFacade {
 
 	/***
 	 * 根据条件查询积分信息
-	 * 
-	 * @param map
-	 * @return
 	 */
 	public Score getBy(Map<String, Object> map) throws BossBizException {
 		return scoreBiz.getBy(map);
@@ -58,10 +42,6 @@ public class ScoreFacadeImpl implements ScoreFacade {
 
 	/***
 	 * 创建积分记录表信息
-	 * 
-	 * @param scoreLog
-	 * @return
-	 * @throws BossBizException
 	 */
 	public long createScoreLog(ScoreLog scoreLog) throws BossBizException {
 		return scoreBiz.createScoreLog(scoreLog);
@@ -69,11 +49,6 @@ public class ScoreFacadeImpl implements ScoreFacade {
 
 	/***
 	 * 查询积分记录列表-分页
-	 * 
-	 * @param pageParam
-	 * @param paramMap
-	 * @return
-	 * @throws BossBizException
 	 */
 	public PageBean queryPage(PageParam pageParam, Map<String, Object> paramMap) throws BossBizException {
 		return scoreBiz.queryPage(pageParam, paramMap);

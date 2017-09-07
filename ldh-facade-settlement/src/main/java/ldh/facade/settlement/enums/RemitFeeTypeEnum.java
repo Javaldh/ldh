@@ -7,7 +7,6 @@ import java.util.Map;
 
 /**
  * Title: 结算规则手续费类型
- * 
  */
 public enum RemitFeeTypeEnum {
 	/**

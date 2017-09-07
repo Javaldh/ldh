@@ -1,6 +1,3 @@
-/**
- * wusc.edu.pay.common.core.mybatis.interceptor.ExecutorInterceptor.java
- */
 package ldh.common.core.mybatis.interceptor;
 
 import java.util.Properties;
@@ -18,19 +15,8 @@ import org.apache.log4j.Logger;
 
 import ldh.common.core.mybatis.dialect.Dialect;
 
-
 /**
- * 
- * 
- * <ul>
- * <li>Title: Mybatis查询拦截器</li>
- * <li>Description:</li>
- * <li>Copyright: www.gzzyzz.com</li>
- * <li>Company:</li>
- * </ul>
- * 
- * @author Hill
- * @version 2014-10-13
+ *  Mybatis查询拦截器
  */
 @Intercepts({ @Signature(type = Executor.class, method = "query", args = { MappedStatement.class, Object.class, RowBounds.class,
 		ResultHandler.class }) })
@@ -139,11 +125,9 @@ public class ExecutorInterceptor extends AbstractInterceptor {
 
 	public static class CountParameter {
 		private Object parameter;
-
 		public CountParameter(Object parameter) {
 			this.parameter = parameter;
 		}
-
 		public Object getParameter() {
 			return parameter;
 		}

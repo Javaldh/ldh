@@ -4,7 +4,6 @@ import ldh.common.exceptions.BizException;
 
 /**
  * 结算异常
- * 
  */
 public class SettBizException extends BizException {
 

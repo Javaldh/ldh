@@ -15,11 +15,7 @@ import ldh.facade.boss.service.EmailFacade;
 
 
 /**
- * 
  * @描述: 邮件功能对外服务接口实现类.
- * @作者: WuShuicheng .
- * @创建时间: 2013-10-29,下午3:47:33 .
- * @版本: 1.0 .
  */
 @Component("emailFacade")
 public class EmailFacadeImpl implements EmailFacade {
@@ -29,10 +25,6 @@ public class EmailFacadeImpl implements EmailFacade {
 
 	/**
 	 * 创建邮箱验证记录.
-	 * 
-	 * @param entity
-	 *            .
-	 * @return ID .
 	 */
 
 	public long createEmailVerify(EmailVerify entity) {
@@ -41,10 +33,6 @@ public class EmailFacadeImpl implements EmailFacade {
 
 	/**
 	 * 更新邮箱验证记录.
-	 * 
-	 * @param entity
-	 *            .
-	 * @return 0或1 .
 	 */
 
 	public long updateEmailVerify(EmailVerify entity) {
@@ -53,10 +41,6 @@ public class EmailFacadeImpl implements EmailFacade {
 
 	/**
 	 * 根据ID获取邮箱验证记录.
-	 * 
-	 * @param id
-	 *            .
-	 * @return EmailVerify.
 	 */
 
 	public EmailVerify getEmailVerifyById(long id) {
@@ -65,10 +49,6 @@ public class EmailFacadeImpl implements EmailFacade {
 
 	/**
 	 * 根据令牌(token)获取邮箱验证记录.
-	 * 
-	 * @param id
-	 *            .
-	 * @return EmailVerify.
 	 */
 
 	public EmailVerify getEmailVerifyByToken(String token) {
@@ -77,12 +57,6 @@ public class EmailFacadeImpl implements EmailFacade {
 
 	/**
 	 * 分页查询邮箱验证记录.
-	 * 
-	 * @param pageParam
-	 *            分页参数.
-	 * @param paramMap
-	 *            查询能数 .
-	 * @return EmailVerifyList.
 	 */
 	public PageBean queryEmailVerifyListPage(PageParam pageParam, Map<String, Object> paramMap) {
 		return emailBiz.queryEmailVerifyListPage(pageParam, paramMap);
@@ -90,10 +64,6 @@ public class EmailFacadeImpl implements EmailFacade {
 
 	/***
 	 * 根据条件查询邮箱验证记录
-	 * 
-	 * @param paramMap
-	 * @return
-	 * @throws BossBizException
 	 */
 	@SuppressWarnings("rawtypes")
 	public List listModelByCondition(Map<String, Object> paramMap) throws BossBizException {

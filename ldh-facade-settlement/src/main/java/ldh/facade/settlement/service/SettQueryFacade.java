@@ -38,15 +38,12 @@ public interface SettQueryFacade {
 
 	/**
 	 * 获取所有可用的结算规则.<br/>
-	 * 
-	 * @return SettRuleList.
 	 */
 	public List<SettRule> listAllAvailableSettRules() throws SettBizException;
 	
 	/**
 	 * 获取所有可用的结算规则.<br/>
 	 * @param settType 结算类型.<br/>
-	 * @return SettRuleList.
 	 */
 	public List<SettRule> listAllAvailableSettRulesBySettType(SettTypeEnum settType) throws SettBizException;
 

@@ -8,9 +8,6 @@ import ldh.facade.settlement.entity.SettRule;
 
 /**
  * @title 发起结算参数的 值对象
- * @company 中益智正(gzzyzz)
- * @author jialong.shen
- * @since 2014-8-13
  */
 public class LaunchSettleVo implements Serializable {
 

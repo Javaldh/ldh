@@ -6,9 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * <p>
  * Title: 结算控制状态
- * 
  */
 public enum RemitFeeSetEnum {
 	/**

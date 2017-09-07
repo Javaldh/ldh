@@ -14,10 +14,7 @@ import redis.clients.jedis.exceptions.JedisConnectionException;
 
 
 /**
- * ClassName: RedisCache <br/>
  * Function: Mybatis 接口 实现 redis 功能 类<br/>
- * date: 2014-8-13 下午5:12:27 <br/>
- * <per>
  * 1 ，只有在SQLMap.xml 文件中添加了 缓存实现类才能生效如下：
  * <cache eviction="LRU" type="wusc.edu.pay.common.utils.cache.redis.mybatisImpl.MybatiesRedisCache" />
  * 2， 必须是在事务正常提交下才会触发putObject(Object key, Object value) 以列队方式加入缓存 
@@ -27,8 +24,6 @@ import redis.clients.jedis.exceptions.JedisConnectionException;
  * 						<delete ... flushCache="true"/>
  * flushCache= 'true'  表示当前操作 会清空本接口命名空间下的所有缓存
  * 可更改 <select ... useCache="false"> 表示当前操作禁用缓存数据
- * </per>
- * @author laich
  */
 public class RedisCache implements Cache {
 

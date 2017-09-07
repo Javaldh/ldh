@@ -11,9 +11,9 @@
 	<dubbo:registry protocol="zookeeper" address="192.168.88.106:2181" />
 	<dubbo:protocol name="dubbo" />
 	<!-- 生成远程服务代理，可以和本地bean一样使用demoService -->
-	<dubbo:reference interface="wusc.edu.pay.facade.bank.service.CardBinFacade" id="cardBinFacade" />
-	<dubbo:reference interface="wusc.edu.pay.facade.bank.service.BankAccountFacade" id="bankAccountFacade" />
-	<dubbo:reference interface="wusc.edu.pay.facade.bank.service.BankAgreementFacade" id="bankAgreementFacade" />
-	<dubbo:reference interface="wusc.edu.pay.facade.bank.service.BankChannelFacade" id="bankChannelFacade" />
+	<dubbo:reference interface="ldh.facade.bank.service.CardBinFacade" id="cardBinFacade" />
+	<dubbo:reference interface="ldh.facade.bank.service.BankAccountFacade" id="bankAccountFacade" />
+	<dubbo:reference interface="ldh.facade.bank.service.BankAgreementFacade" id="bankAgreementFacade" />
+	<dubbo:reference interface="ldh.facade.bank.service.BankChannelFacade" id="bankChannelFacade" />
 
 </beans>  

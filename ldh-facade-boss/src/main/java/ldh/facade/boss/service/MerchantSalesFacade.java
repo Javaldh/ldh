@@ -29,9 +29,6 @@ public interface MerchantSalesFacade {
 	
 	/***
 	 * 根据条件查询列表
-	 * 
-	 * @param paramMap
-	 * @return
 	 */
 	public List<MerchantSales> listByCondition(Map<String, Object> paramMap) throws BossBizException;
 }

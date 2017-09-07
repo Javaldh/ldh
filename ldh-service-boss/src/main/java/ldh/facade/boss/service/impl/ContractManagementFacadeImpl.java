@@ -15,12 +15,7 @@ import ldh.facade.boss.service.ContractManagementFacade;
 
 
 /***
- * 
  * @描述: 合同管理接口实现类.
- * @作者: Lanzy.
- * @创建时间: 2014-4-9, 上午11:18:29 .
- * @版本: V1.0.
- *
  */
 @Component("contractManagementFacade")
 public class ContractManagementFacadeImpl implements ContractManagementFacade{
@@ -63,6 +58,4 @@ public class ContractManagementFacadeImpl implements ContractManagementFacade{
 	public ContractManagement getByUserNo(String merchantNo) {
 		return contractManagementBiz.getByUserNo(merchantNo);
 	}
-	
-	
 }

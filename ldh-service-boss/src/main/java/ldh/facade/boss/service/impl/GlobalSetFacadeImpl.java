@@ -36,9 +36,6 @@ public class GlobalSetFacadeImpl implements GlobalSetFacade{
 
 	/***
 	 * 根据键名查询全局设置表数据
-	 * @param keyValue 键名
-	 * @return
-	 * @throws BossBizException
 	 */
 	public GlobalSet getBySetKey(String keyValue) throws BossBizException {
 		return globalSetBiz.getBySetKey(keyValue);

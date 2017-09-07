@@ -10,11 +10,6 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import ldh.facade.bank.service.BankChannelFacade;
 
-
-/**
- * ClassName: AccountHistoryFaceTest <br/>
- */
-
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = { "classpath:spring-context-bank.xml" })
 // @Transactional

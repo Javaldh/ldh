@@ -14,10 +14,6 @@ import ldh.facade.boss.entity.Article;
 
 /**
  * 类描述：1:文章 2:招聘 3:常见问题 4:产品 管理 Biz接口
- * 
- * @author: huangbin
- * @date： 日期：2013-12-3 时间：下午2:33:24
- * @version 1.0
  */
 @Component("articleBiz")
 public class ArticleBiz {

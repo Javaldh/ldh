@@ -9,14 +9,11 @@ import ldh.facade.user.entity.MerchantOnline;
 import ldh.facade.user.enums.MerchantSignTypeEnum;
 import ldh.facade.user.exceptions.UserBizException;
 
-
-
 /**
  * @描述: 在线支付的商户Dubbo服务接口.
  */
 public interface MerchantOnlineFacade {
 
-	// ///////////////// 在线支付商户信息 MerchantOnline ///////////////////////
 
 	/**
 	 * 根据商户编号查询商户信息.
@@ -34,46 +31,32 @@ public interface MerchantOnlineFacade {
 
 	/***
 	 * 根据条件查询商户列表
-	 * @param pageParam
-	 * @param paramMap
-	 * @return
-	 * @throws UserBizException
 	 */
 	PageBean listMerchantListPage(PageParam pageParam, Map<String, Object> paramMap) throws UserBizException;
 	
 	/***
 	 * 更新在线支付商户信息
-	 * @param merchantOnline
 	 */
 	void update(MerchantOnline merchantOnline) throws UserBizException;
 	
 	/***
 	 * 根据商户ID查询商户信息
-	 * @param merchantId
-	 * @return
 	 */
 	MerchantOnline getById(Long merchantId) throws UserBizException;
 
 
 	/***
 	 * 根据商户全称查询商户信息.
-	 * @param fullName 商户全称.
-	 * @return merchantOnline 在线支付商户信息.
 	 */
 	MerchantOnline getByFullName(String fullName) throws UserBizException;
 	
 	/**
 	 * 查询商户数据
-	 * @param paramMap
-	 * @return
 	 */
 	List<MerchantOnline> listBy(Map<String, Object> paramMap) throws UserBizException;
 	
 	/**
 	 * 查询黑名单和冻结的商户人数
-	 * @param listBlackUser
-	 * @param listFreezeUser
-	 * @return
 	 */
 	Map<String, Object> countMerchant(List<Map<String, Object>> listBlackUser,
 			List<Map<String, Object>> listFreezeUser) throws UserBizException;
@@ -81,16 +64,11 @@ public interface MerchantOnlineFacade {
 	
 	/***
 	 * 根据营业执照号查询商户信息
-	 * @param licenseNo
-	 * @return
 	 */
 	MerchantOnline getMerchantByLicenseNo(String licenseNo);
 	
 	/**
 	 * 代理商商户状态统计
-	 * @param pageParam
-	 * @param paramMap
-	 * @return
 	 */
 	PageBean agentMerchantStautsSumm(PageParam pageParam, Map<String, Object> paramMap);
 	

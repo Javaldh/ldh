@@ -24,12 +24,7 @@ import ldh.common.page.PageBean;
 import ldh.common.page.PageParam;
 
 /**
- * 
  * @描述: 数据访问层基础支撑类.
- * @作者: WuShuicheng .
- * @创建时间: 2013-7-22,下午4:52:52 .
- * @版本: 1.0 .
- * @param <T>
  */
 public abstract class BaseDaoImpl<T extends BaseEntity> extends SqlSessionDaoSupport implements BaseDao<T> {
 
@@ -45,7 +40,7 @@ public abstract class BaseDaoImpl<T extends BaseEntity> extends SqlSessionDaoSup
 	public static final String SQL_COUNT_BY_PAGE_PARAM = "countByPageParam"; // 根据当前分页参数进行统计
 
 	/**
-	 * 注入SqlSessionTemplate实例(要求Spring中进行SqlSessionTemplate的配置).<br/>
+	 * 注入SqlSessionTemplate实例(要求Spring中进行SqlSessionTemplate的配置).
 	 * 可以调用sessionTemplate完成数据库操作.
 	 */
 	@Autowired

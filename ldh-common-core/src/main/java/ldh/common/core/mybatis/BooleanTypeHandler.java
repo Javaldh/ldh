@@ -10,10 +10,6 @@ import org.apache.ibatis.type.TypeHandler;
 
 /**
  * 自定义Boolean类型转换器.
- * @描述: java中的boolean和jdbc中的int之间转换;true-1;false-0.
- * @作者: WuShuicheng .
- * @创建时间: 2013-7-25,下午4:19:11 .
- * @版本: 1.0 .
  */
 @SuppressWarnings("rawtypes")
 public class BooleanTypeHandler implements TypeHandler {

@@ -17,42 +17,27 @@ import ldh.facade.settlement.enums.SettModeTypeEnum;
 import ldh.facade.settlement.enums.SettRecordStatusEnum;
 import ldh.facade.settlement.exception.SettBizException;
 /**
- * 
  * @描述: 结算业务服务接口 .
- * 
  */
 public interface SettBusinessFacade {
 
 	/**
 	 * 判断是否可以发起结算、汇总(查询结算控制表).<br/>
-	 * 
-	 * @param settModeTypeEnum
-	 * @param nowDateTime
-	 * @return true or false.
 	 */
 	boolean isSettModeLaunchable(SettModeTypeEnum settModeTypeEnum, Date nowDateTime) throws SettBizException;
 
 	/**
 	 * 判断该日期是否进行过结算日期调整（如:因节假日调整）.<br/>
-	 * 
-	 * @param date
-	 *            日期.<br/>
-	 * @return true or false.
 	 */
 	boolean isSettDayAdjust(Date date) throws SettBizException;
 
 	/**
 	 * 创建结算记录.<br/>
-	 * 
-	 * @param settRecord
-	 *            结算记录对象.<br/>
 	 */
 	void createSettRecord(SettRecord settRecord) throws SettBizException;
 
 	/**
 	 * 批量创建结算记录.<br/>
-	 * 
-	 * @param settRecordList
 	 *            结算记录对象列表.<br/>
 	 */
 	void createSettRecord(List<SettRecord> settRecordList) throws SettBizException;

@@ -1,6 +1,3 @@
-/**
- * wusc.edu.pay.common.core.mybatis.interceptor.AbstractInterceptor.java
- */
 package ldh.common.core.mybatis.interceptor;
 
 import java.util.ArrayList;
@@ -15,17 +12,7 @@ import org.apache.ibatis.mapping.SqlSource;
 import org.apache.ibatis.plugin.Interceptor;
 
 /**
- * 
- * 
- * <ul>
- * <li>Title: Mybatis拦截器基类</li>
- * <li>Description:</li>
- * <li>Copyright: www.gzzyzz.com</li>
- * <li>Company:</li>
- * </ul>
- * 
- * @author Hill
- * @version 2014-10-13
+ *  Mybatis拦截器基类
  */
 public abstract class AbstractInterceptor implements Interceptor {
 	protected MappedStatement copyFromMappedStatement(MappedStatement ms, SqlSource newSqlSource, boolean isCount) {
@@ -56,11 +43,9 @@ public abstract class AbstractInterceptor implements Interceptor {
 
 	public static class BoundSqlSqlSource implements SqlSource {
 		BoundSql boundSql;
-
 		public BoundSqlSqlSource(BoundSql boundSql) {
 			this.boundSql = boundSql;
 		}
-
 		public BoundSql getBoundSql(Object parameterObject) {
 			return boundSql;
 		}

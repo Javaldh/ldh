@@ -6,15 +6,9 @@ import redis.clients.jedis.JedisSentinelPool;
 import redis.clients.jedis.exceptions.JedisConnectionException;
 
 /**
- * ClassName: CachePool <br/>
  * Function:  redis 初始化与连接池实现<br/>
- * <per>
  * 由于需结合Mybatis实现 不与Spring redis注解实现混用。
  * 与Spring redis注解实现 各独立实现各自功能。
- * </per>
- * date: 2014-8-13 下午4:49:36 <br/>
- * 
- * @author laich
  */
 public class CachePool {
 

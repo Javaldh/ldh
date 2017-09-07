@@ -19,12 +19,12 @@
 	<dubbo:provider timeout="10000" threadpool="fixed" threads="100" accepts="1000" />
 
 	<!-- 对外公布接口 retries 失败后，重复调用次数 loadbalance 负载平衡的方法 actives -->
-	<dubbo:service retries="0"  interface="wusc.edu.pay.facade.bank.service.BankAccountFacade" ref="bankAccountFacade" />
-	<dubbo:service retries="0"  interface="wusc.edu.pay.facade.bank.service.BankAgreementFacade" ref="bankAgreementFacade" />
-	<dubbo:service retries="0"  interface="wusc.edu.pay.facade.bank.service.BankChannelFacade" ref="bankChannelFacade" />
-	<dubbo:service retries="0"  interface="wusc.edu.pay.facade.bank.service.BankSettlementFacade" ref="bankSettlementFacade" />
-	<dubbo:service retries="0"  interface="wusc.edu.pay.facade.bank.service.CardBinFacade" ref="cardBinFacade" />
+	<dubbo:service retries="0"  interface="ldh.facade.bank.service.BankAccountFacade" ref="bankAccountFacade" />
+	<dubbo:service retries="0"  interface="ldh.facade.bank.service.BankAgreementFacade" ref="bankAgreementFacade" />
+	<dubbo:service retries="0"  interface="ldh.facade.bank.service.BankChannelFacade" ref="bankChannelFacade" />
+	<dubbo:service retries="0"  interface="ldh.facade.bank.service.BankSettlementFacade" ref="bankSettlementFacade" />
+	<dubbo:service retries="0"  interface="ldh.facade.bank.service.CardBinFacade" ref="cardBinFacade" />
 	
 	<!-- 银行费率、渠道缓存查找 -->
-	<dubbo:service retries="0"  interface="wusc.edu.pay.facade.bank.service.BankCacheFacade" ref="bankCacheFacade" />
+	<dubbo:service retries="0"  interface="ldh.facade.bank.service.BankCacheFacade" ref="bankCacheFacade" />
 </beans>  

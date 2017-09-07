@@ -40,21 +40,21 @@
 
 	<!-- 类型别名是为 Java类型命名一个短的名字。 它只和 XML配置有关,只用来减少类完全 限定名的多余部分 -->
 	<typeAliases>
-		<typeAlias alias="BankAccount" type="wusc.edu.pay.facade.bank.entity.BankAccount" />
-		<typeAlias alias="BankAgreement" type="wusc.edu.pay.facade.bank.entity.BankAgreement" />
-		<typeAlias alias="BankChannel" type="wusc.edu.pay.facade.bank.entity.BankChannel" />
-		<typeAlias alias="BankSettlement" type="wusc.edu.pay.facade.bank.entity.BankSettlement" />
-		<typeAlias alias="CardBin" type="wusc.edu.pay.facade.bank.entity.CardBin" />
+		<typeAlias alias="BankAccount" type="ldh.facade.bank.entity.BankAccount" />
+		<typeAlias alias="BankAgreement" type="ldh.facade.bank.entity.BankAgreement" />
+		<typeAlias alias="BankChannel" type="ldh.facade.bank.entity.BankChannel" />
+		<typeAlias alias="BankSettlement" type="ldh.facade.bank.entity.BankSettlement" />
+		<typeAlias alias="CardBin" type="ldh.facade.bank.entity.CardBin" />
 	</typeAliases>
 
 	<!-- 放在mappers定义之前 -->
 	<typeHandlers>
-		<typeHandler javaType="Boolean" jdbcType="SMALLINT"  handler="wusc.edu.pay.common.core.mybatis.BooleanTypeHandler" />
+		<typeHandler javaType="Boolean" jdbcType="SMALLINT"  handler="ldh.common.core.mybatis.BooleanTypeHandler" />
 	</typeHandlers>
 	
 	<!-- 数据库适配器 -->
 	<plugins>
-		<plugin interceptor="wusc.edu.pay.common.core.mybatis.interceptor.ExecutorInterceptor">
+		<plugin interceptor="ldh.common.core.mybatis.interceptor.ExecutorInterceptor">
 			<property name="dialectClass" value="${dialectClass}" />
 		</plugin>
 	</plugins>

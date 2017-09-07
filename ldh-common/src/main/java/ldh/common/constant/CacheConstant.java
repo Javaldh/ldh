@@ -1,13 +1,8 @@
-/**
- * wusc.edu.pay.common.constant.CacheConstant.java
- */
 package ldh.common.constant;
 
 /**
- * <ul>
  * <li>Title:缓存常量类</li>
  * <li>Description: 定义缓存KEY值</li>
- * </ul>
  */
 public class CacheConstant {
 	/**
@@ -50,15 +45,12 @@ public class CacheConstant {
 	 * 银行完成支付成功 COMPLETE_PAYMENT_银行订单号
 	 */
 	public static final String COMPLETE_PAYMENT = "COMPLETE_PAYMENT_";
-	
 	/**
 	 * 会计科目与账户关联关系ACCOUNTING_ACCOUNT_TITLE_RELATION_科目编号
 	 */
 	public static final String ACCOUNTING_ACCOUNT_TITLE_RELATION = "ACCOUNTING_ACCOUNT_TITLE_RELATION_";
-	
 	/**
 	 * 快捷支付Session FAST_PAY_SESSION_sessionid
 	 */
 	public static final String FAST_PAY_SESSION = "FAST_PAY_SESSION_";
-
 }

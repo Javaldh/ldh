@@ -7,10 +7,6 @@ import java.util.Map;
 
 /**
  * 结算日汇总类型
- * 
- * @author huqian
- * @date 2014-01-07
- * @version 1.0
  */
 public enum SettDailyCollectTypeEnum {
 

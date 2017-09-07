@@ -3,9 +3,6 @@ package ldh.core.boss.exception;
 /**
  * 
  * @描述: Boss运营系统自定义异常类.
- * @作者: WuShuicheng .
- * @创建时间: 2013-8-1,上午11:14:34 .
- * @版本: 1.0 .
  */
 public class BossException extends Exception {
 
@@ -28,7 +25,6 @@ public class BossException extends Exception {
 	
 	/**
 	 * 带消息提示构造函数.
-	 * @param errMsg .
 	 */
 	public BossException(String errMsg) {
 		super();

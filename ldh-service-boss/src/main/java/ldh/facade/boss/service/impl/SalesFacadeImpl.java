@@ -17,10 +17,6 @@ import ldh.facade.boss.service.SalesFacade;
 
 /**
  * 类描述：
- * 
- * @author: huangbin
- * @date： 日期：2013-11-25 时间：下午5:33:08
- * @version 1.0
  */
 @Component("salesFacade")
 public class SalesFacadeImpl implements SalesFacade {
@@ -67,9 +63,6 @@ public class SalesFacadeImpl implements SalesFacade {
 	
 	/**
 	 * 生成机具编号
-	 * 
-	 * @param bizType
-	 * @return
 	 */
 	@Override
 	public String buildSalesNo() {

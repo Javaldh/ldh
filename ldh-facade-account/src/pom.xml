@@ -2,13 +2,13 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>wusc.edu.pay.common</groupId>
+		<groupId>ldh.common</groupId>
 		<artifactId>pay-common-parent</artifactId>
 		<version>1.0-SNAPSHOT</version>
 		<relativePath>../pay-common-parent</relativePath>
 	</parent>
 
-	<groupId>wusc.edu.pay.facade</groupId>
+	<groupId>ldh.facade</groupId>
 	<artifactId>pay-facade-account</artifactId>
 	<version>${pay-facade-account.version}</version>
 	<packaging>jar</packaging>
@@ -19,7 +19,7 @@
 	<dependencies>
 
 		<dependency>
-			<groupId>wusc.edu.pay.common</groupId>
+			<groupId>ldh.common</groupId>
 			<artifactId>pay-common</artifactId>
 			<version>${pay-common.version}</version>
 		</dependency>

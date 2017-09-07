@@ -16,10 +16,6 @@ import ldh.facade.boss.service.ProvinceFacade;
 
 /**
  * 类描述：省市区对外发布接口
- * 
- * @author: huangbin
- * @date： 日期：2013-11-27 时间：下午3:22:14
- * @version 1.0
  */
 @SuppressWarnings("rawtypes")
 @Component("provinceFacade")
@@ -29,9 +25,6 @@ public class ProvinceFacadeImpl implements ProvinceFacade {
 
 	/***
 	 * 查询省列表
-	 * 
-	 * @param paramMap
-	 * @return
 	 */
 	public List listProvince(Map<String, Object> paramMap) throws BossBizException {
 		return provinceBiz.listProvince(paramMap);
@@ -39,9 +32,6 @@ public class ProvinceFacadeImpl implements ProvinceFacade {
 
 	/***
 	 * 查询城市列表
-	 * 
-	 * @param paramMap
-	 * @return
 	 */
 	public List listCityBy(Map<String, Object> paramMap) throws BossBizException {
 		return provinceBiz.listCityBy(paramMap);
@@ -49,9 +39,6 @@ public class ProvinceFacadeImpl implements ProvinceFacade {
 
 	/***
 	 * 查询地区城镇列表
-	 * 
-	 * @param paramMap
-	 * @return
 	 */
 	public List listTownBy(Map<String, Object> paramMap) throws BossBizException {
 		return provinceBiz.listTownBy(paramMap);

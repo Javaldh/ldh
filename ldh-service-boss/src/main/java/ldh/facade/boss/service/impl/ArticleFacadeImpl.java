@@ -16,10 +16,6 @@ import ldh.facade.boss.service.ArticleFacade;
 
 /**
  * 类描述：
- * 
- * @author: huangbin
- * @date： 日期：2013-12-3 时间：下午2:39:33
- * @version 1.0
  */
 @Component("articleFacade")
 public class ArticleFacadeImpl implements ArticleFacade {

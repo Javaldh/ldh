@@ -10,14 +10,12 @@ import ldh.facade.settlement.exception.SettBizException;
 
 /**
  * 结算规则管理服务接口
- * 
  */
 public interface SettManagementFacade {
 	
 	/*********************************结算规则****************************************************/
 	/**
 	 * 创建结算规则<br>
-	 * @return 
 	 */
 	public long createSettlementRule(SettRule param) throws SettBizException;
 

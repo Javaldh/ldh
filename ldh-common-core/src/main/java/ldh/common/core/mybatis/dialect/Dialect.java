@@ -1,20 +1,7 @@
-/**
- * wusc.edu.pay.common.core.mybatis.dialect.Dialect.java
- */
 package ldh.common.core.mybatis.dialect;
 
 /**
- * 
- * 
-*<ul>
 *<li>Title: 类似hibernate的Dialect</li>
-*<li>Description: </li>
-*<li>Copyright: www.gzzyzz.com</li>
-*<li>Company:</li>
-*</ul>
-*
- * @author Hill
- * @version 2014-10-13
  */
 public abstract class Dialect {
 	public boolean supportsLimit() {
@@ -37,12 +24,10 @@ public abstract class Dialect {
 	/**
 	 * 将sql变成分页sql语句,提供将offset及limit使用占位符(placeholder)替换.
 	 * 
-	 * <pre>
 	 * 如mysql
 	 * dialect.getLimitString("select * from user", 12, ":offset",0,":limit") 将返回
 	 * select * from user limit :offset,:limit
 	 * </pre>
-	 * 
 	 * @return 包含占位符的分页sql
 	 */
 	public abstract String getLimitString(String sql, int offset, String offsetPlaceholder, int limit, String limitPlaceholder);

@@ -7,10 +7,6 @@ import java.util.Map;
 
 /**
  * 结算控制器，状态
- * 
- * @author huqian
- * @date 2014-01-07
- * @version 1.0
  */
 public enum SettContorlStatusEnum {
 

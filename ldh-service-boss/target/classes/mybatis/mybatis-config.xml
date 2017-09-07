@@ -40,28 +40,28 @@
 
 	<!-- 类型别名是为 Java类型命名一个短的名字。 它只和 XML配置有关,只用来减少类完全 限定名的多余部分 -->
 	<typeAliases>
-		<typeAlias alias="Article" type="wusc.edu.pay.facade.boss.entity.Article" />
-		<typeAlias alias="City" type="wusc.edu.pay.facade.boss.entity.City" />
-		<typeAlias alias="ContractManagement" type="wusc.edu.pay.facade.boss.entity.ContractManagement" />
-		<typeAlias alias="EmailVerify" type="wusc.edu.pay.facade.boss.entity.EmailVerify" />
-		<typeAlias alias="GlobalSet" type="wusc.edu.pay.facade.boss.entity.GlobalSet" />
-		<typeAlias alias="Province" type="wusc.edu.pay.facade.boss.entity.Province" />
-		<typeAlias alias="Sales" type="wusc.edu.pay.facade.boss.entity.Sales" />
-		<typeAlias alias="Score" type="wusc.edu.pay.facade.boss.entity.Score" />
-		<typeAlias alias="ScoreLog" type="wusc.edu.pay.facade.boss.entity.ScoreLog" />
-		<typeAlias alias="Town" type="wusc.edu.pay.facade.boss.entity.Town" />
-		<typeAlias alias="MerchantSales" type="wusc.edu.pay.facade.boss.entity.MerchantSales" />
+		<typeAlias alias="Article" type="ldh.facade.boss.entity.Article" />
+		<typeAlias alias="City" type="ldh.facade.boss.entity.City" />
+		<typeAlias alias="ContractManagement" type="ldh.facade.boss.entity.ContractManagement" />
+		<typeAlias alias="EmailVerify" type="ldh.facade.boss.entity.EmailVerify" />
+		<typeAlias alias="GlobalSet" type="ldh.facade.boss.entity.GlobalSet" />
+		<typeAlias alias="Province" type="ldh.facade.boss.entity.Province" />
+		<typeAlias alias="Sales" type="ldh.facade.boss.entity.Sales" />
+		<typeAlias alias="Score" type="ldh.facade.boss.entity.Score" />
+		<typeAlias alias="ScoreLog" type="ldh.facade.boss.entity.ScoreLog" />
+		<typeAlias alias="Town" type="ldh.facade.boss.entity.Town" />
+		<typeAlias alias="MerchantSales" type="ldh.facade.boss.entity.MerchantSales" />
 		
 	</typeAliases>
 
 	<!-- 在在mappers定义之前 -->
 	<typeHandlers>
-		<typeHandler javaType="Boolean" jdbcType="SMALLINT"  handler="wusc.edu.pay.common.core.mybatis.BooleanTypeHandler" />
+		<typeHandler javaType="Boolean" jdbcType="SMALLINT"  handler="ldh.common.core.mybatis.BooleanTypeHandler" />
 	</typeHandlers>
 	
 	<!-- 数据库适配器 -->
 	<plugins>
-		<plugin interceptor="wusc.edu.pay.common.core.mybatis.interceptor.ExecutorInterceptor">
+		<plugin interceptor="ldh.common.core.mybatis.interceptor.ExecutorInterceptor">
 			<property name="dialectClass" value="${dialectClass}" />
 		</plugin>
 	</plugins>
